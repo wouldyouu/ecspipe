@@ -8,7 +8,7 @@ env:
 phases:
   pre_build: #빌드 전에 할 행동
     commands:
-      - aws ecr get-login-password --region ap-northeast-2 | docker login --username AWS 
+      - aws ecr get-login-password --region ap-northeast-2 | docker login --username AWS --password-stdin $AWS_ECR
       
   build: # 빌드 명령
     commands:
