@@ -1,10 +1,10 @@
 version: 0.2
 
 env:
-  AWS_ECR: 854402489649.dkr.ecr.ap-northeast-2.amazonaws.com
-  IMAGE_REPO_NAME: ecspipe-image
-  CONTAINER_NAME: ecspipe-container
-
+  variables:
+    AWS_ECR: 854402489649.dkr.ecr.ap-northeast-2.amazonaws.com
+    IMAGE_REPO_NAME: ecspipe-image
+    CONTAINER_NAME: ecspipe-container
 phases:
   pre_build: #빌드 전에 할 행동
     commands:
